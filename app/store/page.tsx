@@ -68,7 +68,7 @@ export default function Store() {
   const cartItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-12 sm:py-20 bg-white min-h-screen">
+    <div className="px-4 sm:px-6 lg:px-8 py-12 sm:py-20 bg-[#EBC7C0] min-h-screen">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

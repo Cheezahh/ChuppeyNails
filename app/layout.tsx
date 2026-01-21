@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chuppey Nails",
+  title: "Chupey Nails",
   description: "Beautiful nail artistry and care",
 };
 
@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-pink-100">
+        <nav className="sticky top-0 z-50 w-full bg-white/40 backdrop-blur-sm border-b border-pink-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="text-2xl font-semibold text-primary">
-                Chuppey Nails
+                Chupey Nails
               </Link>
               <div className="flex gap-6 items-center">
                 <Link
@@ -64,11 +64,11 @@ export default function RootLayout({
           </div>
         </nav>
         <main className="min-h-screen">{children}</main>
-        <footer className="bg-pink-50 border-t border-pink-100 mt-20">
+        <footer className="bg-pink-50 border-t border-pink-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-primary mb-4">
-                Chuppey Nails
+                Chupey Nails
               </h3>
               <p className="text-gray-600 mb-4">Beautiful nail artistry and care</p>
               <div className="flex justify-center gap-4">
@@ -90,7 +90,7 @@ export default function RootLayout({
                 </a>
               </div>
               <p className="text-gray-500 text-sm mt-6">
-                © {new Date().getFullYear()} Chuppey Nails. All rights reserved.
+                © {new Date().getFullYear()} Chupey Nails. All rights reserved.
               </p>
             </div>
           </div>

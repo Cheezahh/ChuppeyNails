@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-[#EBC7C0]">
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-gradient-to-b from-pink-50 to-white">
+      <section className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-gradient-to-b from-pink-50 to-[#EBC7C0]">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light text-gray-900 mb-6 tracking-tight">
             Beautiful Nails,
@@ -43,7 +43,7 @@ export default function Home() {
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
               <p>
-                Welcome to Chuppey Nails, where artistry meets excellence. We
+                Welcome to Chupey Nails, where artistry meets excellence. We
                 specialize in creating stunning nail designs that reflect your
                 unique style and personality.
               </p>
@@ -65,7 +65,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section
         id="gallery"
-        className="px-4 sm:px-6 lg:px-8 py-20 bg-pink-50/30"
+        className="px-4 sm:px-6 lg:px-8 py-20"
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
@@ -141,7 +141,7 @@ export default function Home() {
               Book Your Appointment
             </h2>
             <p className="text-gray-700 text-lg mb-8 text-center leading-relaxed">
-              Ready to experience the Chuppey Nails difference? Book your
+              Ready to experience the Chupey Nails difference? Book your
               appointment today and let us pamper you with our premium services.
             </p>
             <div className="space-y-4 max-w-md mx-auto">
@@ -178,7 +178,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20 bg-pink-50/30">
+      <section className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm">
             <h2 className="text-4xl font-light text-gray-900 mb-6 text-center">
@@ -196,10 +196,10 @@ export default function Home() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                 <a
-                  href="mailto:hello@chuppeynails.com"
+                  href="mailto:hello@chupeynails.com"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
-                  hello@chuppeynails.com
+                  hello@chupeynails.com
                 </a>
                 <span className="text-gray-300 hidden sm:inline">•</span>
                 <a
