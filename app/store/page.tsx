@@ -72,7 +72,7 @@ export default function Store() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl sm:text-6xl font-light text-gray-900 mb-4">
+          <h1 className="text-5xl sm:text-6xl font-semibold text-gray-900 mb-4">
             Store
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

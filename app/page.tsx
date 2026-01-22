@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-gradient-to-b from-pink-50 to-[#EBC7C0]">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-gray-900 mb-6 tracking-tight">
             Beautiful Nails,
             <br />
             <span className="text-primary">Beautiful You</span>
@@ -35,10 +35,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20">
+      <section id="about" className="px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-pink-50/50 rounded-3xl p-8 sm:p-12 shadow-sm">
-            <h2 className="text-4xl font-light text-gray-900 mb-6 text-center">
+            <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">
               About Us
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
@@ -68,7 +68,7 @@ export default function Home() {
         className="px-4 sm:px-6 lg:px-8 py-20"
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-light text-gray-900 mb-12 text-center">
+          <h2 className="text-4xl font-semibold text-gray-900 mb-12 text-center">
             Gallery
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -137,7 +137,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-8 sm:p-12 shadow-sm">
-            <h2 className="text-4xl font-light text-gray-900 mb-6 text-center">
+            <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">
               Book Your Appointment
             </h2>
             <p className="text-gray-700 text-lg mb-8 text-center leading-relaxed">
@@ -147,16 +147,7 @@ export default function Home() {
             <div className="space-y-4 max-w-md mx-auto">
               <div className="bg-white rounded-2xl p-6 shadow-sm">
                 <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Classic Manicure
-                </h3>
-                <p className="text-gray-600 mb-4">$35</p>
-                <button className="w-full px-6 py-3 bg-primary text-white rounded-full hover:bg-primary-hover transition-colors">
-                  Book Now
-                </button>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-sm">
-                <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Gel Manicure
+                  Builder Gel
                 </h3>
                 <p className="text-gray-600 mb-4">$45</p>
                 <button className="w-full px-6 py-3 bg-primary text-white rounded-full hover:bg-primary-hover transition-colors">
@@ -165,7 +156,16 @@ export default function Home() {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm">
                 <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Nail Art Design
+                  Gel X Full Set
+                </h3>
+                <p className="text-gray-600 mb-4">$35</p>
+                <button className="w-full px-6 py-3 bg-primary text-white rounded-full hover:bg-primary-hover transition-colors">
+                  Book Now
+                </button>
+              </div>
+              <div className="bg-white rounded-2xl p-6 shadow-sm">
+                <h3 className="text-xl font-medium text-gray-900 mb-2">
+                  Regular Gel
                 </h3>
                 <p className="text-gray-600 mb-4">Starting at $60</p>
                 <button className="w-full px-6 py-3 bg-primary text-white rounded-full hover:bg-primary-hover transition-colors">
@@ -177,52 +177,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm">
-            <h2 className="text-4xl font-light text-gray-900 mb-6 text-center">
-              Contact Us
-            </h2>
-            <div className="space-y-6 text-center">
-              <div>
-                <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Get in Touch
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Have questions or want to learn more about our services? We'd
-                  love to hear from you.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                <a
-                  href="mailto:hello@chupeynails.com"
-                  className="text-primary hover:text-primary-hover transition-colors"
-                >
-                  hello@chupeynails.com
-                </a>
-                <span className="text-gray-300 hidden sm:inline">•</span>
-                <a
-                  href="tel:+1234567890"
-                  className="text-primary hover:text-primary-hover transition-colors"
-                >
-                  (123) 456-7890
-                </a>
-              </div>
-              <div className="pt-6">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-hover transition-colors text-lg font-medium"
-                >
-                  Follow on Instagram
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

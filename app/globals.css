@@ -10,15 +10,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), "Inter", sans-serif;
 }
 
 /* Primary color utility classes */
@@ -40,4 +39,27 @@ body {
 
 .hover\:text-primary-hover:hover {
   color: var(--primary-hover);
+}
+
+/* Nav link hover underline effect - expands from center */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
