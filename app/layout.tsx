@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import ClientLayout from "./components/ClientLayout";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,42 +24,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
-        <nav className="sticky top-0 z-50 w-full bg-white/40 backdrop-blur-sm border-b border-pink-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <Link href="/" className="text-2xl font-semibold text-primary">
-                Chupey Nails
-              </Link>
-              <div className="flex gap-6 items-center">
-                <Link
-                  href="/"
-                  className="nav-link text-gray-700 hover:text-primary transition-colors"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/#gallery"
-                  className="nav-link text-gray-700 hover:text-primary transition-colors"
-                >
-                  Gallery
-                </Link>
-                <Link
-                  href="/#book"
-                  className="nav-link text-gray-700 hover:text-primary transition-colors"
-                >
-                  Book
-                </Link>
-                <Link
-                  href="/store"
-                  className="nav-link text-gray-700 hover:text-primary transition-colors"
-                >
-                  Store
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <main className="min-h-screen">{children}</main>
+        <ClientLayout>{children}</ClientLayout>
         <footer className="bg-pink-50 border-t border-pink-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             {/* Mobile: stacked layout */}
